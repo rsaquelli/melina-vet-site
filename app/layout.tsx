@@ -19,12 +19,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.melinavet.com.br"),
+
   title: {
     default: "Dra. Melina Prudente Correa | Médica Veterinária",
     template: "%s | Dra. Melina Prudente Correa",
   },
+
   description:
-    "Atendimento veterinário para cães e gatos, com consultas, vacinação, atendimento especializado para filhotes, cirurgias, procedimentos, laudos para viagens, hotelzinho domiciliar e orientação para tutores.",
+    "Cuidado veterinário com experiência, carinho e atenção em cada detalhe. Atendimento para cães e gatos, vacinação, filhotes, laudos para viagens e orientação para tutores.",
+
   keywords: [
     "Dra. Melina",
     "médica veterinária",
@@ -37,18 +41,37 @@ export const metadata: Metadata = {
     "laudos veterinários para viagens",
     "carteirinha digital pet",
   ],
+
   authors: [{ name: "Dra. Melina Prudente Correa" }],
   creator: "Dra. Melina Prudente Correa",
   publisher: "Dra. Melina Prudente Correa",
+
   openGraph: {
     title: "Dra. Melina Prudente Correa | Médica Veterinária",
     description:
       "Cuidado veterinário com experiência, carinho e atenção em cada detalhe. Atendimento para cães e gatos, vacinação, filhotes, laudos para viagens e orientação para tutores.",
-    url: "https://melinavet.com.br",
+    url: "https://www.melinavet.com.br",
     siteName: "Dra. Melina Prudente Correa",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/logo-melina.png",
+        width: 1200,
+        height: 630,
+        alt: "Dra. Melina Prudente Correa - Médica Veterinária",
+      },
+    ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Dra. Melina Prudente Correa | Médica Veterinária",
+    description:
+      "Cuidado veterinário com experiência, carinho e atenção em cada detalhe.",
+    images: ["/logo-melina.png"],
+  },
+
   robots: {
     index: true,
     follow: true,
